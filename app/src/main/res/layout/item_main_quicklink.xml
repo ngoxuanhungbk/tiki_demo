@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="quicklink"
+            type="vn.hungnx.tikidemo.data.display.QuickLinkDisplay" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+
+        >
+        <ImageView
+            android:id="@+id/img_cover"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            imageUrl="@{quicklink.imageUrl}"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@{quicklink.stringTitle}"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+</layout>
